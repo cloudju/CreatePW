@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		9B0AC9C524E7894D0028E56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9C424E7894D0028E56F /* AppDelegate.swift */; };
 		9B0AC9C724E7894D0028E56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9C624E7894D0028E56F /* SceneDelegate.swift */; };
-		9B0AC9C924E7894D0028E56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9C824E7894D0028E56F /* ViewController.swift */; };
+		9B0AC9C924E7894D0028E56F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9C824E7894D0028E56F /* HomeViewController.swift */; };
 		9B0AC9CC24E7894D0028E56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AC9CA24E7894D0028E56F /* Main.storyboard */; };
 		9B0AC9CE24E7894F0028E56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AC9CD24E7894F0028E56F /* Assets.xcassets */; };
 		9B0AC9D124E7894F0028E56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AC9CF24E7894F0028E56F /* LaunchScreen.storyboard */; };
 		9B0AC9DC24E7894F0028E56F /* CreatePWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9DB24E7894F0028E56F /* CreatePWTests.swift */; };
 		9B0AC9E724E7894F0028E56F /* CreatePWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9E624E7894F0028E56F /* CreatePWUITests.swift */; };
+		9B0AC9F524E790F80028E56F /* CheckboxLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AC9F424E790F80028E56F /* CheckboxLabelView.xib */; };
+		9B0AC9F724E7977D0028E56F /* CheckboxLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AC9F624E7977D0028E56F /* CheckboxLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		9B0AC9C124E7894D0028E56F /* CreatePW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatePW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0AC9C424E7894D0028E56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B0AC9C624E7894D0028E56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B0AC9C824E7894D0028E56F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B0AC9C824E7894D0028E56F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B0AC9CB24E7894D0028E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B0AC9CD24E7894F0028E56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0AC9D024E7894F0028E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		9B0AC9E224E7894F0028E56F /* CreatePWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreatePWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0AC9E624E7894F0028E56F /* CreatePWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePWUITests.swift; sourceTree = "<group>"; };
 		9B0AC9E824E7894F0028E56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0AC9F424E790F80028E56F /* CheckboxLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxLabelView.xib; sourceTree = "<group>"; };
+		9B0AC9F624E7977D0028E56F /* CheckboxLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 			children = (
 				9B0AC9C424E7894D0028E56F /* AppDelegate.swift */,
 				9B0AC9C624E7894D0028E56F /* SceneDelegate.swift */,
-				9B0AC9C824E7894D0028E56F /* ViewController.swift */,
+				9B0AC9C824E7894D0028E56F /* HomeViewController.swift */,
 				9B0AC9CA24E7894D0028E56F /* Main.storyboard */,
+				9B0AC9F424E790F80028E56F /* CheckboxLabelView.xib */,
+				9B0AC9F624E7977D0028E56F /* CheckboxLabelView.swift */,
 				9B0AC9CD24E7894F0028E56F /* Assets.xcassets */,
 				9B0AC9CF24E7894F0028E56F /* LaunchScreen.storyboard */,
 				9B0AC9D224E7894F0028E56F /* Info.plist */,
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0AC9F524E790F80028E56F /* CheckboxLabelView.xib in Resources */,
 				9B0AC9D124E7894F0028E56F /* LaunchScreen.storyboard in Resources */,
 				9B0AC9CE24E7894F0028E56F /* Assets.xcassets in Resources */,
 				9B0AC9CC24E7894D0028E56F /* Main.storyboard in Resources */,
@@ -259,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0AC9C924E7894D0028E56F /* ViewController.swift in Sources */,
+				9B0AC9F724E7977D0028E56F /* CheckboxLabelView.swift in Sources */,
+				9B0AC9C924E7894D0028E56F /* HomeViewController.swift in Sources */,
 				9B0AC9C524E7894D0028E56F /* AppDelegate.swift in Sources */,
 				9B0AC9C724E7894D0028E56F /* SceneDelegate.swift in Sources */,
 			);
