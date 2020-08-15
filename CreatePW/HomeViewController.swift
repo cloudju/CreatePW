@@ -13,11 +13,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var englishCheckBox: CheckboxLabelView!
     @IBOutlet weak var numberCheckBox: CheckboxLabelView!
     @IBOutlet weak var symbolCheckbox: CheckboxLabelView!    
-
+    @IBOutlet weak var custumSymbolBtn: UIButton!
+    @IBOutlet weak var pwLengthTextField: UITextField!
+    @IBOutlet weak var createBtn: UIButton!
+    @IBOutlet weak var pwLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func custumSymbolBtnTouchInside(_ sender: Any) {
+    }
+    
+    @IBAction func createBtnTouchInside(_ sender: Any) {
+    }
+    
+    @IBAction func copyToTouchInside(_ sender: Any) {
+    }
 }
 

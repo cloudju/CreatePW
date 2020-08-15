@@ -41,37 +41,110 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="数字"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKr-c7-IeU" customClass="CheckboxLabelView" customModule="CreatePW" customModuleProvider="target">
-                                <rect key="frame" x="24" y="313.5" width="366" height="45"/>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKr-c7-IeU" customClass="CheckboxLabelView" customModule="CreatePW" customModuleProvider="target">
+                                <rect key="frame" x="24" y="314" width="258" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="45" id="5Ke-nA-jic"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="符号"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7Q-9q-zw6">
+                                <rect key="frame" x="290" y="316" width="100" height="41"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pWq-6u-9LC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="詳細"/>
+                                <connections>
+                                    <action selector="custumSymbolBtnTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="00n-X2-tgW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-3T-UxJ">
+                                <rect key="frame" x="89" y="374.5" width="100" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ouj-Wb-mh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vi-YD-Od6">
+                                <rect key="frame" x="197" y="373" width="193" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="100" id="iVF-6Z-wZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="生成"/>
+                                <connections>
+                                    <action selector="createBtnTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7n7-e1-1XI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="桁数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPu-fH-Ktu">
+                                <rect key="frame" x="24" y="379" width="49" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-gt-9FQ">
+                                <rect key="frame" x="24" y="428" width="366" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="han-RV-pO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-eC-WG0">
+                                <rect key="frame" x="73" y="787" width="268" height="41"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="クリップボードにコピー"/>
+                                <connections>
+                                    <action selector="copyToTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YO3-6V-bD9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78817730300738154" green="0.86032347130122266" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="lKr-c7-IeU" firstAttribute="top" secondItem="x80-i3-aMe" secondAttribute="bottom" constant="10" id="1tH-wa-DED"/>
+                            <constraint firstItem="gPu-fH-Ktu" firstAttribute="top" secondItem="lKr-c7-IeU" secondAttribute="bottom" constant="20" id="0O5-8b-IFc"/>
+                            <constraint firstItem="w7Q-9q-zw6" firstAttribute="leading" secondItem="lKr-c7-IeU" secondAttribute="trailing" constant="8" id="0V2-rx-BJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2LK-eC-WG0" secondAttribute="bottom" constant="34" id="3Gd-OC-r3N"/>
+                            <constraint firstItem="bhm-gt-9FQ" firstAttribute="top" secondItem="gPu-fH-Ktu" secondAttribute="bottom" constant="20" id="7v4-bp-4cz"/>
                             <constraint firstItem="4ZL-43-Piv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="8e0-rp-6cG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lKr-c7-IeU" secondAttribute="trailing" constant="24" id="CGd-el-I6p"/>
+                            <constraint firstItem="AGd-3T-UxJ" firstAttribute="centerY" secondItem="gPu-fH-Ktu" secondAttribute="centerY" id="A0J-wS-Lb5"/>
+                            <constraint firstItem="9Vi-YD-Od6" firstAttribute="leading" secondItem="AGd-3T-UxJ" secondAttribute="trailing" constant="8" id="CDv-FH-WWN"/>
                             <constraint firstItem="4ZL-43-Piv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Ebo-oA-zNc"/>
                             <constraint firstItem="x80-i3-aMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="H3q-fL-XEa"/>
+                            <constraint firstItem="lKr-c7-IeU" firstAttribute="top" secondItem="x80-i3-aMe" secondAttribute="bottom" constant="10.5" id="LSg-Y5-2lN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Vi-YD-Od6" secondAttribute="trailing" constant="24" id="LaY-uX-4Nj"/>
                             <constraint firstItem="x80-i3-aMe" firstAttribute="top" secondItem="BfS-9i-jQo" secondAttribute="bottom" constant="10" id="MhT-1Y-a9O"/>
                             <constraint firstItem="BfS-9i-jQo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-24" id="Re1-Zf-vha"/>
-                            <constraint firstItem="lKr-c7-IeU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="eQy-UI-CEf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w7Q-9q-zw6" secondAttribute="trailing" constant="24" id="Sdd-DF-Spk"/>
+                            <constraint firstItem="lKr-c7-IeU" firstAttribute="leading" secondItem="x80-i3-aMe" secondAttribute="leading" id="dt3-Rw-16Z"/>
                             <constraint firstItem="BfS-9i-jQo" firstAttribute="top" secondItem="4ZL-43-Piv" secondAttribute="bottom" constant="10" id="eaj-2k-Vzo"/>
+                            <constraint firstItem="gPu-fH-Ktu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="fuW-ni-zA2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x80-i3-aMe" secondAttribute="trailing" constant="24" id="htS-Gt-to5"/>
                             <constraint firstItem="BfS-9i-jQo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="j1R-Qr-zIy"/>
+                            <constraint firstAttribute="trailing" secondItem="lKr-c7-IeU" secondAttribute="trailing" constant="132" id="lzE-HV-EeQ"/>
+                            <constraint firstItem="2LK-eC-WG0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rP2-qQ-uQp"/>
+                            <constraint firstItem="AGd-3T-UxJ" firstAttribute="leading" secondItem="gPu-fH-Ktu" secondAttribute="trailing" constant="16" id="riE-dT-Srw"/>
+                            <constraint firstItem="bhm-gt-9FQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="uNj-h5-BsX"/>
                             <constraint firstAttribute="trailing" secondItem="4ZL-43-Piv" secondAttribute="trailing" constant="24" id="uk4-eK-HYx"/>
+                            <constraint firstItem="9Vi-YD-Od6" firstAttribute="centerY" secondItem="gPu-fH-Ktu" secondAttribute="centerY" id="wtr-YS-jmJ"/>
+                            <constraint firstItem="lKr-c7-IeU" firstAttribute="centerY" secondItem="w7Q-9q-zw6" secondAttribute="centerY" id="z4f-Wf-KpP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhm-gt-9FQ" secondAttribute="trailing" constant="24" id="zQ8-WX-F5b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="createBtn" destination="9Vi-YD-Od6" id="tez-yp-IH5"/>
+                        <outlet property="custumSymbolBtn" destination="w7Q-9q-zw6" id="GtS-Bu-yDG"/>
                         <outlet property="englishCheckBox" destination="BfS-9i-jQo" id="jlD-VB-yYW"/>
                         <outlet property="numberCheckBox" destination="x80-i3-aMe" id="jmW-xm-4wj"/>
+                        <outlet property="pwLabel" destination="bhm-gt-9FQ" id="eAs-s3-1hF"/>
+                        <outlet property="pwLengthTextField" destination="AGd-3T-UxJ" id="lHW-px-cbq"/>
                         <outlet property="symbolCheckbox" destination="lKr-c7-IeU" id="xgQ-4A-vYo"/>
                     </connections>
                 </viewController>
