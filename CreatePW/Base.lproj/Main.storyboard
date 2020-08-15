@@ -21,22 +21,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-Sb-PgX" customClass="CheckboxLabelView" customModule="CreatePW" customModuleProvider="target">
-                                <rect key="frame" x="24" y="203.5" width="366" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfS-9i-jQo" customClass="CheckboxLabelView" customModule="CreatePW" customModuleProvider="target">
+                                <rect key="frame" x="24" y="203.5" width="366" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" priority="750" constant="128" id="0ao-Ir-dza"/>
+                                    <constraint firstAttribute="height" priority="250" constant="45" id="1mF-Bn-BSL"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="アルファベット"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.78817730300738154" green="0.86032347130122266" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4ZL-43-Piv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="8e0-rp-6cG"/>
                             <constraint firstItem="4ZL-43-Piv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Ebo-oA-zNc"/>
-                            <constraint firstItem="bs4-Sb-PgX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="U6l-ON-upM"/>
-                            <constraint firstItem="bs4-Sb-PgX" firstAttribute="top" secondItem="4ZL-43-Piv" secondAttribute="bottom" constant="10" id="f2p-pV-Sg5"/>
+                            <constraint firstItem="BfS-9i-jQo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-24" id="Re1-Zf-vha"/>
+                            <constraint firstItem="BfS-9i-jQo" firstAttribute="top" secondItem="4ZL-43-Piv" secondAttribute="bottom" constant="10" id="eaj-2k-Vzo"/>
+                            <constraint firstItem="BfS-9i-jQo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="j1R-Qr-zIy"/>
                             <constraint firstAttribute="trailing" secondItem="4ZL-43-Piv" secondAttribute="trailing" constant="24" id="uk4-eK-HYx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bs4-Sb-PgX" secondAttribute="trailing" constant="24" id="yZ6-9i-M52"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
